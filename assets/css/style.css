@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #F0F8FF;
+	font-size: 18px;
+	font-family: 'Cutive Mono', monospace;
+	color: #777;
+	text-align: center;
+}
+
+
