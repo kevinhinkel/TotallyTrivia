@@ -24,11 +24,11 @@ var questions =[{
 	correctAnswer: "Arcade Fire"
 },	{
 	question:"Which of these artists wasn't part of the Group of Seven?",
-	answers:["Franklin Carmichael", "J.E.H. MacDonald", "A.Y. Jackson", "Tom Thomson"],
+	answers:["Franklin Carmichael", "Tom Thomson", "J.E.H. MacDonald", "A.Y. Jackson"],
 	correctAnswer: "Tom Thomson"
 },	{
 	question:"What animal is on the Canadian quarter?",
-	answers:["Beaver", "Loon", "Caribou", "Wolf"],
+	answers:["Beaver", "Caribou", "Loon", "Wolf"],
 	correctAnswer: "Caribou"
 },	{
 	question:"What is the capital city of Canada?",
@@ -36,7 +36,7 @@ var questions =[{
 	correctAnswer: "Ottawa"
 },	{
 	question:"What is the most popular Canadian food/beverage franchise?",
-	answers:["Second Cup", "Pizza Pizza", "Tim Hortons", "Booster Juice"],
+	answers:[ "Tim Hortons", "Second Cup", "Pizza Pizza", "Booster Juice"],
 	correctAnswer: "Tim Hortons"
 }];
 
@@ -57,7 +57,7 @@ var game = {
 		$('#subwrapper').prepend('<h2>Time Remaining: <span id="counter">45</span> seconds</h2>');
 		$('#start').remove();
 		for(var i=0;i<questions.length;i++){
-			$('#subwrapper').append('<h2>'+questions[i].question+'</h2>');
+			$('#subwrapper').append('<h2>' + questions[i].question + '</h2>');
 			for(var j=0; j<questions[i].answers.length;j++){
 				$("#subwrapper").append("<input type='radio' name='question-"+i+"' value ='"+questions[i].answers[j]+"'>"+questions[i].answers[j])
 			}
@@ -128,10 +128,10 @@ var game = {
 		result: function(){
 			clearInterval(timer);
 			$('#subwrapper h2').remove();
-			$('#subwrapper').html("<h2>All Done Eh!</h2>");
-			$('#subwrapper').append("<h3>Correct Answers:" +this.correct+"</h3>");
-			$('#subwrapper').append("<h3>Incorrect Answers:" +this.incorrect+"</h3>");
-			$('#subwrapper').append("<h3>Unanswered:" +(questions.length-(this.incorrect+this.correct))+"</h3>");
+			$('#subwrapper').html("<h2> All Done Eh! </h2>");
+			$('#subwrapper').append("<h3> Correct Answers:" + this.correct + "</h3>");
+			$('#subwrapper').append("<h3> Incorrect Answers:" + this.incorrect + "</h3>");
+			$('#subwrapper').append("<h3> Unanswered:" + (questions.length-(this.incorrect+this.correct)) + "</h3>");
 		}
 }
 
