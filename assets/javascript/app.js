@@ -20,8 +20,8 @@ var questions =[{
 	correctAnswer: "Quebec"
 },	{
 	question:"Which of the following indie rock bands is from Canada?",
-	answers:["The Shins", "The Kooks", "Bloc Party", "Wolf Parade"],
-	correctAnswer: "Wolf Parade"
+	answers:["The Shins", "The Kooks", "Bloc Party", "Arcade Fire"],
+	correctAnswer: "Arcade Fire"
 },	{
 	question:"Which of these artists wasn't part of the Group of Seven?",
 	answers:["Franklin Carmichael", "J.E.H. MacDonald", "A.Y. Jackson", "Tom Thomson"],
